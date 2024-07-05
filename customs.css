@@ -1,0 +1,72 @@
+/* ------------------------------Gogle Font import Link----------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   font-family: "Wittgenstein", serif;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/*=====================================Header========================================*/
+header #topHeader{
+    background: white;
+    padding: 10px;
+    display: flex;
+}
+header #topHeader img{
+    width: 180px;
+}
+header #logo{
+    display: flex;
+}
+header #inf{
+    display: flex;
+    justify-content: end;
+}
+header #headerContainer{
+    background: #151615;
+}
+header #header{
+    background: #151615;
+    display: flex;
+}
+
+header #menu{
+    display: flex;
+    justify-content: start;
+    padding-top: 30px;
+
+}
+header #menu2{
+    display: flex;
+    padding-top: 25px;
+    justify-content: end;
+    align-items: center;
+}
+
+header #menu2 input {
+    background: #41B974;
+    border: 1px solid black;
+    color: white;
+    padding: 15px 50px;
+    transition: 1s border ;
+}
+
+header #menu2 input:hover{
+    border: 1px solid #41B974;
+    background: #000;
+    color: #41B974;
+    padding: 20px 50px;
+    }
+    
