@@ -21,7 +21,6 @@ li{
 /*=====================================Header========================================*/
 header #topHeader{
     background: white;
-    padding: 10px;
     display: flex;
 }
 header #topHeader img{
@@ -29,10 +28,32 @@ header #topHeader img{
 }
 header #logo{
     display: flex;
+    width: 50%;
 }
+
+header #infDiv{
+    width: 50%;
+}
+
+header #infDiv a{
+   text-decoration: none;
+   color: black;
+   text-decoration: double;
+   }
 header #inf{
     display: flex;
-    justify-content: end;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+header #phoneIcon, #mailIcon{
+    color: #41B974;
+    padding: 10px;
+}
+
+header #phoneIcon{
+    margin-right: 1px solid gray;
 }
 header #headerContainer{
     background: #151615;
