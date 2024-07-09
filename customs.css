@@ -6,6 +6,7 @@
     box-sizing: border-box;
    font-family: "Wittgenstein", serif;
 }
+
 body{
     padding: 0px;
     margin: 0px;
@@ -14,6 +15,7 @@ body{
 a{
     text-decoration: none;
 }
+
 li{
     list-style: none;
 }
@@ -55,19 +57,20 @@ header #phoneIcon, #mailIcon{
 header #phoneIcon{
     margin-right: 1px solid gray;
 }
+
 header #headerContainer{
     background: #151615;
 }
 header #header{
     background: #151615;
     display: flex;
+    width: 100%;
 }
 
 header #menu{
     display: flex;
     justify-content: start;
-    padding-top: 30px;
-
+    padding-top: 30px;    
 }
 header #menu2{
     display: flex;
@@ -91,3 +94,10 @@ header #menu2 input:hover{
     padding: 20px 50px;
     }
     
+
+    /*=====================================Section2========================================*/
+
+    #Section2Background{
+        background: url("images/slider-six-1-2.jpg");
+        height: 100vh;
+    }
