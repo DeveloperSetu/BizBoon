@@ -1,12 +1,16 @@
 /* ------------------------------Gogle Font import Link----------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-   font-family: "Wittgenstein", serif;
+    font-family: "Wittgenstein", serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+  
 body{
     padding: 0px;
     margin: 0px;
@@ -116,7 +120,6 @@ header #menu2 input:hover{
      }
      100%{
         background-image: url(images/slider-six-1-1\ \(1\).jpg);
-
      }
 }
 
@@ -137,6 +140,7 @@ header #menu2 input:hover{
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: linear;
+    display: block;
 }
  .discoverBtn{
     border: 1px solid black;
@@ -146,6 +150,9 @@ header #menu2 input:hover{
     padding: 15px 50px;
     border-radius: 2px;
     margin-top: 10px;
+    border: none;
+    transition: 1s;
+    cursor: pointer;
 }
 .discoverBtn:hover{ 
     background: white;
@@ -167,33 +174,292 @@ header #menu2 input:hover{
     padding-top: 14%;
 }
 
-#section3{
+/*=====================================Section3=======================================*/
+
+ #section3{
     width: 100%;
-}
-.section3LeftDiv{
-    float: left;
-    width: 50%;
-}
-.section3LeftDiv img{
-    width: 90%;
-}
-.section3RighrDiv{
-    float: left;
-    width: 50%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: white;
+    color: #000;
 }
 
-.section3RighrDiv p{
+#section3 .section3LeftDiv img{
+    width: 100%;
+}
+
+#section3 .section3RighrDiv p{
    font-family: sans-serif;
    font-size: 16px;
    line-height: 16px;
    font-weight: 800;
    padding-top: 60px;
-}
+} 
 
-.section3RighrDiv h1{
+#section3 .section3RighrDiv h1{
     font-family: sans-serif;
     color: rgb(26, 53, 70);
     font-size: 48px;
     line-height: 48px;
     font-weight: 500;
 }
+
+#section3 h5{
+    font-family: sans-serif;
+    color: rgb(26, 53, 70);
+    padding-top: 27px;
+    padding-bottom: 27px;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+#section3 .caption{
+    color: gray;
+    font-family: sans-serif;
+    padding-top: 20px;
+}
+
+#section3 li{
+   font-size: 18px;
+   line-height: 27px;
+   font-family:Varta, sans-serif;
+   padding: 8px;
+}
+#section3 li img{
+margin-right: 10px;
+}
+
+/*=====================================Section4=======================================*/
+#section4{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #EDF1F3;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family:Varta, sans-serif;
+}
+
+#section4 p{
+    font-size: 16px;
+    line-height: 16px;
+    font-family:Varta, sans-serif;
+}
+
+#section4 h1{
+    font-family:Varta, sans-serif;
+    color: #1a3546;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+#section4 .imageDivContainer{
+    padding-top: 50px;
+    text-align: start;
+}
+
+#section4 .imageDiv1,.imageDiv2,.imageDiv3{
+    padding: 15px;
+    background: white;
+    border: 15px solid #EDF1F3;
+}
+
+
+#section4 .imageDiv1 h5,.imageDiv2 h5,.imageDiv3 h5{
+    font-size: 24px;
+}
+
+#section4 .imageDiv1 p, .imageDiv2 p, .imageDiv3 p{
+  color: gray;
+}
+
+#section4 img{
+  width: 100%;
+}
+
+#section4 .iconImageDiv{
+    display: block;
+    margin-top: -20px;
+    margin-left: 72%;
+}
+
+#section4 .iconImageDiv img{
+    width: 100px;
+}
+
+/*=====================================Section5=======================================*/
+#section5 {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+#section5 h1{
+    color: #1a3546;
+    font-family:Varta, sans-serif;
+}
+
+#section5 form{
+    margin-top: 30px;
+}
+
+#email{
+    border: none;
+    width: 400px;
+    padding: 10px;
+}
+/*=====================================Section6=======================================*/
+
+#section6{
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 90px;
+    background: #1A3546;
+    font-family: sans-serif;
+
+}
+
+#section6 img{
+    width: 22%;
+    padding-top: 30px;
+}
+
+#section6 .section6Div{
+    background: #1A3546;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    display: flex;
+}
+
+#section6 .section6Div div {
+ width: 25%;
+ color: white;
+ border-right: 1px solid white;
+}
+
+/*=====================================Section7=======================================*/
+#section7 {
+    background: #EDF1F3;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family:sans-serif;
+}
+
+#section7 .container{
+    text-align: center;
+}
+
+#section7 .container p{
+    text-align: left;
+    font-family:sans-serif;
+    padding: 20px;
+
+}
+#section7 .description{
+    color: #7a7a7a;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+}
+
+#section7 .div1, .div2, .div3{
+    padding: 10px;
+    background: white;
+    border: 20px solid  #EDF1F3;
+}
+#section7 .div1:hover, .div2:hover, .div3:hover{
+    background: #41B974;
+}
+
+#section7 .div1 p, .div2 p, .div3 p{
+   float: left;
+} 
+
+#section7 .div1 i, .div2 i, .div3 i{
+    float: left;
+    font-size: 30px;
+    background:#41B974;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    padding: 11px;
+    color: white;
+ } 
+
+ #section7 .div1 i:hover, .div2 i:hover, .div3 i:hover{
+    background: white;
+    color: #41B974;
+ }
+
+/*=====================================Section8=======================================*/
+ #section8{
+    background-image: url(images/about-six-1-1.jpg);
+    background-size: cover;
+ }
+
+ #section8 .section8Div{
+    background-color: #41B272;
+    padding: 100px;
+    color: white;
+ }
+
+ #section8 .section8Div h1{
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: 600;
+    font-family:sans-serif;
+
+ }
+
+ #section9{
+    display: block;
+ }
+
+  #footer{
+    display: block;
+    background: #1a3546;
+    padding-top:100px;
+    padding-bottom:100px;
+ }
+
+ #footer img{
+    width: 230px;
+ }
+
+ #footer h5{
+    font-family:sans-serif;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 400;
+    color: white;
+ }
+
+ #footer i{
+    color: #b1b9b5;
+    padding: 10px;
+    background: #172F3E;
+    border-radius: 30px;
+ }
+
+ #footer i:hover{
+    color: #172F3E;
+    background: white;
+ }
+ #footer a{
+    text-decoration: none;
+    color: white;
+ }
+
+ #footer li{
+    list-style: none;
+    margin-left: -30PX;
+ }
+
+ #sendemail{
+  width: 300px;
+  border: none;
+  padding: 10px;
+ }
