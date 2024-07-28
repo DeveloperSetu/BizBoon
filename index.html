@@ -6,12 +6,14 @@
     <title>BezBoom</title>
      <!-- CSS Link -->
      <link rel="stylesheet" href="customs.css">
+     <link rel="stylesheet" href="responsive.css">
      <!-- FontAwesome CDN -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      <!-- Bootstrapt CDN / Link -->
-     <link rel="stylesheet" href="bootstrap-5.0.2-dist.zip">
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script></head>
 <body>
     <!--==========================================> Section 1 <=====================================-->
     <section id="section1">
@@ -23,7 +25,7 @@
                     </div>
                     <div id="infDiv">
                         <ul id="inf">
-                            <li style="border-right: 1px solid gray; padding-right:10px;"><a href="tel:92 888 666 0000"><i class="fa-solid fa-phone" id="phoneIcon"></i>92 888 666 0000</a></li>
+                            <li class="infLi"><a href="tel:92 888 666 0000"><i class="fa-solid fa-phone" id="phoneIcon"></i>92 888 666 0000</a></li>
                             <li><a href="mailto:needhelp@company.com"><i class="fa-regular fa-envelope" id="mailIcon"></i>needhelp@company.com</a></li>
                         </ul>
                     </div>
@@ -31,12 +33,14 @@
             <div id="headerContainer">
             <nav>
                 <div id="header" class="container">
+                    <i class="fa-solid fa-bars" id="bar"></i>
                         <ul class="container" id="menu">
-                            <li class="nav-item"><a href="#" class="nav-link text-white">HOME</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link text-white">ABOUT US</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link text-white">SERVICES</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link text-white">OUR WROK</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link text-white">CONTACT</a></li>
+                            <i class="fa-solid fa-xmark" id="crossBar"></i>
+                            <li class="nav-item"><a href="#home" id="#home" class="nav-link text-white">HOME</a><div class="borderDiv"></div></li>
+                            <li class="nav-item"><a href="aboutus.html" id="#aboutUs" class="nav-link text-white">ABOUT US</a><div class="borderDiv"></div></li>
+                            <li class="nav-item"><a href="service.html" class="nav-link text-white">SERVICES</a><div class="borderDiv"></div></li>
+                            <li class="nav-item"><a href="ourwork.html" class="nav-link text-white">OUR WROK</a><div class="borderDiv"></div></li>
+                            <li class="nav-item"><a href="contact.html" class="nav-link text-white">CONTACT</a><div class="borderDiv"></div></li>
                         </ul>
                         <ul id="menu2">
                             <li>
@@ -56,7 +60,10 @@
 <!--===================================> Section 2 <===================================--->
     <section id="section2">
         <div id="Section2Background">
-        <h5>Welcome to best linoor business agency</h5><div style="background:white; margin-top: -3px; height: 1px; width: 380px; margin-left: 35%;"></div>
+        <h5>Welcome to best linoor business agency</h5>
+        <center>
+            <div id="section2Underline"></div>
+        </center>
         <h1 id="title">Meet the Corporate <br> Business Agency</h1>
         <button class="discoverBtn">Discover More</button>
       </div>
@@ -69,15 +76,15 @@
 <section id="section3">
 <div class="container">
     <div class="row">
-        <div class="col col-md-6 ">
+        <div class="col col-lg-6 col col-md-12 col col-sm-12">
             <div class="section3LeftDiv">
                 <img src="images/2024-01-20_152252.png" alt="">
             </div>
-        </div>
-        
-        <div class="col col-md-6">
+        </div> 
+        <div class=" col col-lg-6 col col-md-12 col col-sm-12">
             <div class="section3RighrDiv">
-                <p>About Company</p><div style="height: 3px; background: #41B974; width:140px;"></div>
+                <p>About Company</p>
+                <div class="section4underline"></div>
                 <h1>We provide the best
                     business services</h1>
                 <span class="caption">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, simply free text by injected humour, or randomised.</span>
@@ -103,10 +110,10 @@
 <section id="section4">
     <div class="container">
     <p>Checkout Our Services</p>
-    <div style="height: 3px; background: #41B974; width:160px; margin-left: 44%;"></div>
+    <div class="section4underline"></div>
     <h1>What we’re offering</h1>
     <div class="row imageDivContainer ">
-        <div class="col col-md-4 imageDiv1">
+        <div class="col col-lg-4 col-md-4 col-sm-12 imageDiv1">
             <img src="images/service-1-1-1.jpg" class="service" alt="">
             <div class="iconImageDiv">
                 <img src="images/icon1.png" class="iconImage" alt="404!">
@@ -115,7 +122,7 @@
             <p>Aliq is notm hendr erit a augue insu image pellen simply freed text ipsum.</p>
         </div>
 
-        <div class="col col-md-4 imageDiv2">
+        <div class="col col-lg-4 col-md-4 col-sm-12 imageDiv2">
             <img src="images/service-1-2-1.jpg" class="service" alt="">
             <div class="iconImageDiv">
                 <img src="images/icon2.png" class="iconImage" alt="404!">
@@ -123,7 +130,7 @@
             <h5>Marketing Advice</h5>
             <p>Aliq is notm hendr erit a augue insu image pellen simply freed text ipsum.</p>
         </div>
-        <div class=" col col-md-4 imageDiv3">
+        <div class="col col-lg-4 col-md-4 col-sm-12 imageDiv3">
             <img src="images/service-1-3.jpg" class="service" alt="">
             <div class="iconImageDiv">
                 <img src="images/icon3.png" class="iconImage" alt="404!">
@@ -138,7 +145,7 @@
 <section id="section5">
   <div class="container">
     <div class="row">
-        <div class="col col-md-6">
+        <div class="col col-md-6 ">
             <h1>Subscribe to our newsletter to <br>
                 get daily content!</h1>
         </div>
@@ -191,7 +198,7 @@
 <section id="section7">
     <div class="container">
         <div class="row">
-            <div class="col col-md-6">
+            <div class="col col-md-6 col-sm-12">
                 <div class="rightDiv">
                     <p style="text-align: center; padding: 5px; margin-top: 20px;">Checkout Our Services</p>
                     <div style="height: 2px; background: #41B974; width:180px; margin-left: 37%;"></div>
@@ -199,7 +206,7 @@
                     <p class="description">There are many variations of passages of available but the majority have <br> suffered alteration in some form, injected humou or randomised words <br> slightly believable.</p>
                 </div>
             </div>
-            <div class="col col-md-6">
+            <div class="col col-md-6 col-sm-12">
                 <div class="leftDiv">
                     <img src="images/about-six-1-1.jpg" alt="">
                 </div>
@@ -269,15 +276,17 @@
                     <form action="">
                         <h5>Newsletter</h5>
                         <input type="email" name="email" id="sendemail" placeholder="E-mail Address">
-                        <img width="24" height="24" src="https://img.icons8.com/material-sharp/24/737373/filled-sent.png" alt="filled-sent"/>
-                        <input type="checkbox" >I agree to all terms and policies of the company
+                        <img width="24" height="24" src="https://img.icons8.com/material-sharp/24/737373/filled-sent.png" alt="filled-sent"/><br>
+                        <input type="checkbox" style="margin-right: 5px; "> I agree to all terms and policies
                    </form>
                 </div>
             </div>
         </div>
     </footer>
     <div class="bottomFooter">
-         
+        <div class="container">
+           <a href="http://developersetu.xyz" target="_blank"><p>© developersetu 2024 | All Rights Reserved</p></a>
+        </div>
     </div>
 </section>
 
