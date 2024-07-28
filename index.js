@@ -11,3 +11,20 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
+
+// ========================Toggle menu JS========================//
+
+var bar = document.querySelector("#bar")
+var crossBar = document.querySelector("#crossBar")
+var menu = document.querySelector("#menu")
+
+bar.addEventListener("click", ()=>{ 
+  bar.style.display= "none";
+  menu.style.display= "block";
+});
+
+
+crossBar.addEventListener("click", ()=>{ 
+  bar.style.display= "block";
+  menu.style.display= "none";
+})
