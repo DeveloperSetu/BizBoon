@@ -549,3 +549,113 @@ margin-right: 10px;
     text-decoration: none;
     color: white;
  }
+/*=====================================Contact Section=======================================*/
+/*===================================== Section2=======================================*/
+
+ #contactSection2{
+    background: url(images/commonBanner.jpeg);
+    background-size: cover;
+    height: 60vh;
+ }
+
+ #contactSection2 .maincontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.4);
+    height: 60vh;
+ }
+
+ #contactSection2 h1{
+    color: white;
+    font-size: 88px;
+    line-height: 88px;
+    font-weight: 800;
+    font-family: Varta;
+ }
+ /*=====================================> Section3 <=======================================*/
+ #contactSection3 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #EDF1F3;
+ }
+
+ #contactSection3 .contactCart{
+   padding: 30px;
+   background: white;
+   border: 20px solid #EDF1F3;
+ }
+ #contactSection3 .icon{
+    font-size: 30px;
+    background: #41B974;
+    color: white;
+    padding: 20px;
+    border-radius: 50px;
+    float: left;
+    margin: 10px;
+ }
+
+ #contactSection3 .icon:hover{
+    font-size: 30px;
+    background: white;
+    border: 1px solid #41B974;
+    color: #41B974;
+    padding: 20px;
+    border-radius: 50px;
+    float: left;
+    margin: 10px;
+ }
+
+ #contactSection3 h5{
+    margin: 10px;
+    font-family: Varta;
+    color: black;
+ }
+
+ #contactSection3 p{
+    margin: 10px;
+    font-family: Varta;
+    color: gray;
+ }
+
+ #contactsection4{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: white;
+ }
+
+ #contactsection4 h1{
+    color: #172F3E;
+    font-size: 40px;
+ }
+ #contactsection4 img{
+    width: 100%;
+ }
+ #contactsection4 input{
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #41B974;
+    margin: 10px;
+ }
+
+ #contactsection4 textarea{
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #41B974;
+    margin: 10px;
+ }
+ #contactsection4 a{
+    margin: 10px;
+    padding: 20px 40px;
+    color: white;
+    background: #41B974;
+    transition: 1s;
+    text-decoration: none;
+    border-radius: 5px;
+ }
+
+ #contactsection4 a:hover{
+    color: #41B974;
+    background: white;
+    border: 1px solid #41B974;
+ }
