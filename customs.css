@@ -243,7 +243,7 @@ header #menu2 input:hover{
 }
 
 #section3 .section3LeftDiv img{
-    width: 100%;
+    width: 500px;
 }
 
 #section3 .section3RighrDiv p{
@@ -549,6 +549,239 @@ margin-right: 10px;
     text-decoration: none;
     color: white;
  }
+
+
+/* ===========================================ABOUT=================================================== */
+/* ===========================================About section 2=================================================== */
+#aboutSection2{
+    background-image: url(images/commonBanner.jpeg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+}
+
+#aboutSection2 .maincontainer{
+    background: rgba(0,0,0,0.4);
+    min-height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutSection2 h1{
+    text-align: center;
+    color: white;
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: 500;
+}
+
+/* ===========================================About section 3=================================================== */
+#aboutSection3{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    justify-content: center;
+}
+
+#aboutSection3 h1{
+    font-size: 52px;
+    line-height: 52px;
+    font-weight: 500;
+    font-family: Varta;
+}
+#aboutSection3 img{
+    width: 100%;
+    border-radius: 14px;
+}
+
+#aboutSection3 i{
+    color: white;
+    padding: 10px;
+    background: #b1b9b5;
+    border-radius: 30px;
+    margin: 5px;
+ }
+
+ #aboutSection3 i:hover{
+    color: #9EC3E1;
+    background: white;
+ }
+
+ #aboutSection3 h1{
+    text-align: start;
+    color: black;
+    font-size: 60px;
+    line-height: 64px;
+    font-weight: 400;
+    font-family: Varta;
+}
+#aboutSection3 p{
+    font-family: Varta;
+    color: #b1b9b5;
+    margin-top: 60px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+#aboutSection3 h2{
+    font-size: 34px;
+    color: #41B974;
+    font-weight: 400;
+    font-family: Varta;
+    margin-top: 60px;
+}
+
+#aboutSection3 .sertificate{
+    width: 300px;
+    margin-top: 100px;
+}
+
+/* ===========================================About section 4=================================================== */
+#section4 .row{
+ background: #cdcdcd;
+ padding-top: 100px;
+ padding-bottom: 100px;
+}
+
+#section4 i{
+   font-size: 60px;
+   color: #000;
+}
+
+#section4 .skillDiv:hover i{
+    color: #41B974;
+ }
+ 
+#section4 .skillDiv{
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px;
+}
+#section4 .skilTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#section4 h2{
+    color: #000;
+}
+
+#section4 p{
+    color: gray;
+}
+ 
+#section4 .underlineDiv{
+    height: 4px;
+    width: 100%;
+    background: #41B974;
+    display: flex;
+    justify-content: end;
+    transition: 1s;
+}
+#section4 .skillDiv:hover .underlineDiv{
+    height: 4px;
+    width: 0%;
+}
+
+/* ===========================================About section 5=================================================== */
+#section5{
+    margin-top: 100p;
+
+}
+
+#section5 img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+
+/* ===========================================SERVICE=================================================== */
+/* ===========================================Service section 2=================================================== */
+#serviceSection2{
+    background-image: url(images/commonBanner.jpeg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+
+    
+}
+
+#serviceSection2 .maincontainer{
+    background: rgba(0,0,0,0.4);
+    min-height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#serviceSection2 h1{
+    text-align: center;
+    color: white;
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: 500;
+}
+
+/* ===========================================Service section 2=================================================== */
+#serviceSection3{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+/* ===========================================CONTACT=================================================== */
+/* ===========================================Contact section 2=================================================== */
+#ourWorkSection2{
+    background-image: url(images/commonBanner.jpeg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+   
+}
+
+#ourWorkSection2 .maincontainer{
+    background: rgba(0,0,0,0.4);
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ourWorkSection2 h1{
+    text-align: center;
+    color: white;
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: 500;
+}
+/* ===========================================CONTACT=================================================== */
+/* ===========================================Contact section 2=================================================== */
+#contactSection2{
+    background-image: url(images/commonBanner.jpeg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+   
+}
+
+#contactSection2 .maincontainer{
+    background: rgba(0,0,0,0.4);
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contactSection2 h1{
+    text-align: center;
+    color: white;
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: 500;
+}
+
 /*=====================================Contact Section=======================================*/
 /*===================================== Section2=======================================*/
 
