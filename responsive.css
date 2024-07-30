@@ -1,168 +1,1208 @@
-/* ------------------------------Gogle Font import Link----------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Wittgenstein", serif;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-  
-body{
-    padding: 0px;
-    margin: 0px;
-}
-
-a{
-    text-decoration: none;
-}
-
-li{
-    list-style: none;
-}
-
-.underline{
-    width: 160px;
-    height: 2px;
-    background: #41B974;
-    animation-name: underline;
-}
-
-
-/*=====================================Header========================================*/
-header #topHeader{
-    background: white;
-    display: flex;
-    justify-content: center;
-}
-header #topHeader img{
-    width: 180px;
-}
-header #logo{
-    display: flex;
-    width: 50%;
-}
-
-header #infDiv{
-    width: 50%;
-}
-
-header #infDiv a{
-   text-decoration: none;
-   color: black;
-}
-
-header #inf{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-}
-
-header #inf .infLi{
- border-right: 1px solid gray; padding-right:10px;
-}
-
-header #phoneIcon, #mailIcon{
-    color: #41B974;
-    padding: 10px;
-}
-
-header #phoneIcon{
-    margin-right: 1px solid gray;
-}
-
-header #headerContainer{
-    background: #151615;
-}
-header #bar{
-    font-size: 30px;
-    color: #41B974;
-    background-color: white;
-    padding: 5px 10px ;
-    border: 1px solid #41B974;
-    display: none;
-}
-
-header #crossBar{
-    font-size: 30px;
-    color: #41B974;
-    background-color: white;
-    padding: 5px 10px ;
-    border: 1px solid #41B974;
-    float: right;
-    display: none;
-}
-header #menu a{
-    padding-bottom: 0px;   
-}
-header #menu a:hover{
-    background: #151615;  
-}
-header .borderDiv1{
-    width: 0px;
-    height: 2px;
-    margin-top: 10px;
-    transition: 0.50s;
-}
-
-header #menu li:hover .borderDiv{
-    width: 100%; 
-    height: 2px;  
-    background: #41B272;
-}
-
-header #menu2{
-    display: none;
-    padding-top: 25px;
-    justify-content: end;
-    align-items: center;
-}
-header #header{
-    display: flex;
-    width: 100%;
-}
-
-header #menu{
-    display: flex;
-    justify-content: start;
-    padding-top: 30px; 
-    margin-top: 0px;    
-}
-
-header #menu2{
-    display: flex;
-    padding-top: 25px;
-    justify-content: end;
-    align-items: center;
-}
-
-header #menu2 input {
-    background: #41B974;
-    border: 1px solid black;
-    color: white;
-    padding: 15px 50px;
-    transition: 1s border ;
-}
-
-header #menu2 input:hover{
-    border: 1px solid #41B974;
-    background: #000;
-    color: #41B974;
-    padding: 20px 50px;
+/* Extra small Devices (phone 600px down) */
+@media only screen and (max-width:600px){
+    header #topHeader img{
+        width: 180px;
+        height: 80px;
+    }
+    header #inf{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        font-size: 13px;
+    }
+    header a{
+        text-decoration: none;
+    }
+    header #phoneIcon{
+        margin-right: 0;
+    }
+    header #inf .infLi{
+        border-right: none;
+    }
+    header #headerContainer{
+        background: #41B974;
+    }
+    header #bar{
+        font-size: 30px;
+        width: 50px;
+        color: #41B974;
+        background-color: white;
+        padding: 5px 10px ;
+        border: 1px solid #41B974  ;
+        display: block;
     }
 
-.sticky{
+    header #crossBar{
+        font-size: 30px;
+        color: #41B974;
+        background-color: white;
+        padding: 5px 10px ;
+        border: 1px solid #41B974;
+        float: right;
+        display: block;
+    }
+
+    header #crossBar:hover{
+        background: rgba(0, 0, 0, 0.4);
+    }
+    header #header{
+        display: block;
+        width: 100%;
+    }
+    
+    header #menu{
+        display: block;
+        justify-content: center;
+        text-align: center;
+        padding-top: 30px;
+        transition: 2s;   
+        display: none; 
+    }
+    header #menu a{
+        padding-bottom: 20px;
+        transition: 0.60s;   
+
+    }
+    header #menu a:hover{
+        background: rgba(0, 0, 0, 0.4);
+        padding-bottom: 20px;   
+    }
+    
+    header #menu2{
+        display: none;
+        padding-top: 25px;
+        justify-content: end;
+        align-items: center;
+    }
+/*=====================================Section2========================================*/
+@keyframes bgAnimation{
+    0%{
+        background-image: url(images/slider-six-1-1\ \(1\).jpg);
+
+    }
+    50%{
+        background-image: url(images/slider-six-1-2.jpg);
+
+    }
+    100%{
+        background-image: url(images/slider-six-1-1\ \(1\).jpg);
+    }
+}
+
+#Section2Background{
+    background-color: rgba(0,0,0,0.4);
+    min-height: 80vh;
+    justify-content: center;
+    text-align: center;
+}
+
+#section2{
+    background-image: url(images/slider-six-1-1\ \(1\).jpg);
+    min-height: 80vh;
+    background-size:cover ;
+    background-repeat: no-repeat;
+    animation-name: bgAnimation  ;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
     display: block;
-    position: fixed;
-    top: 0;
+}
+.discoverBtn{
+    border: 1px solid black;
+    padding: 12px 35px;
+    background: #41B974;
+    color: white;
+    padding: 15px 50px;
+    border-radius: 2px;
+    margin-top: 10px;
+    border: none;
+    transition: 1s;
+    cursor: pointer;
+}
+.discoverBtn:hover{ 
+    background: white;
+    color: black;
+}
+
+
+#section2 h1{
+    font-size: 56px;
+    font-weight: 700px;
+    color: white;
+    font-family: sans-serif;
+}
+
+#section2 h5{
+    color: white;
+    font-family: sans-serif;
+    padding-top: 26%;
+}
+/*=====================================Section3=======================================*/
+#section3{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: white;
+    color: #000;
+}
+
+#section3 .section3LeftDiv img{
     width: 100%;
 }
 
+#section3 .section3RighrDiv p{
+font-family: sans-serif;
+font-size: 16px;
+line-height: 16px;
+font-weight: 800;
+padding-top: 60px;
+} 
+
+#section3 .section3RighrDiv h1{
+    font-family: sans-serif;
+    margin-top: 15px;
+    color: rgb(26, 53, 70);
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 500;
+}
+
+#section3 h5{
+    font-family: sans-serif;
+    color: rgb(26, 53, 70);
+    padding-top: 27px;
+    padding-bottom: 27px;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+#section3 .caption{
+    color: gray;
+    font-family: sans-serif;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+
+#section3 li{
+font-size: 18px;
+line-height: 27px;
+font-family:Varta, sans-serif;
+padding: 8px;
+}
+#section3 li img{
+margin-right: 10px;
+}
+/* ============================secton4================================== */
+
+#section4 .section4underline{
+    height: 3px; 
+    background: #41B974; 
+    width:160px; 
+    margin-left: 35%;
+
+}
+    /* ===========================================About section 2=================================================== */
+#aboutSection2{
+    background: url(images/commonBanner.jpeg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    width: 100%;
+}
+#aboutSection2 h1{
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutSection2 .maincontainer{
+    background: rgba(0,0,0,0.4);
+    min-height: 60vh;
+
+}
+    
+/* ===========================================About section 3=================================================== */
+#aboutSection3{
+padding-top: 100px;
+padding-bottom: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#aboutSection3 h1{
+font-size: 42px;
+line-height: 42px;
+font-weight: 500;
+font-family: Varta;
+}
+
+#aboutSection3 img{
+width: 90%;
+border-radius: 14px;
+}
+
+#aboutSection3 i{
+color: white;
+padding: 10px;
+background: #b1b9b5;
+border-radius: 30px;
+margin: 5px;
+}
+
+#aboutSection3 i:hover{
+color: #9EC3E1;
+background: white;
+}
+
+#aboutSection3 h1{
+text-align: start;
+color: black;
+font-size: 46px;
+line-height: 64px;
+font-weight: 400;
+font-family: Varta;
+padding-top: 20px;
+}
+#aboutSection3 p{
+font-family: Varta;
+color: #b1b9b5;
+margin-top: 30px;
+font-size: 20px;
+line-height: 24px;
+font-weight: 300;
+}
+
+#aboutSection3 h2{
+font-size: 34px;
+color: #41B974;
+font-weight: 400;
+font-family: Varta;
+margin-top: 40px;
+}
+
+#aboutSection3 .sertificate{
+width: 300px;
+margin-top: 60px;
+}
+
+/* ===========================================About section 4=================================================== */
+#section4{
+background: #cdcdcd;
+padding-top: 100px;
+padding-bottom: 100px;
+}
+
+#section4 i{
+font-size: 60px;
+color: #000;
+}
+
+#section4 .skillDiv:hover i{
+color: #41B974;
+}
+
+#section4 .skillDiv{
+background: white;
+padding: 30px;
+border-radius: 10px;
+margin: 20px;
+}
+#section4 .skilTitle{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#section4 h2{
+color: #000;
+}
+
+#section4 p{
+color: gray;
+}
+
+#section4 .underlineDiv{
+height: 4px;
+width: 100%;
+background: #41B974;
+display: flex;
+justify-content: end;
+transition: 1s;
+}
+#section4 .skillDiv:hover .underlineDiv{
+height: 4px;
+width: 0%;
+}
+/* ===========================================About section 4=================================================== */
+#section4 .row{
+background: #cdcdcd;
+padding-top: 100px;
+padding-bottom: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#section4 i{
+  font-size: 60px;
+  color: #000;
+}
+
+#section4 .skillDiv:hover i{
+   color: #41B974;
+}
+
+#section4 .skillDiv{
+   background: white;
+   padding: 30px;
+   border-radius: 10px;
+   margin: 20px;
+}
+#section4 .skilTitle{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+#section4 h1{
+padding-bottom: 10px;
+}
+#section4 h2{
+   color: #000;
+}
+
+#section4 p{
+   color: gray;
+}
+
+#section4 .underlineDiv{
+   height: 4px;
+   width: 100%;
+   background: #41B974;
+   display: flex;
+   justify-content: end;
+   transition: 1s;
+}
+#section4 .skillDiv:hover .underlineDiv{
+   height: 4px;
+   width: 0%;
+}
+/* ===========================================About section 5=================================================== */
+#section5{
+margin-top: 100p;
+}
+
+#section5 img{
+width: 60px;
+height: 60px;
+border-radius: 50px;
+}
+}
+
+
+
+/* Small Devices (portrait tablets and large phones, 600px up)========Mobile====*/
+@media only screen and (min-width:600px){
+        header #topHeader img{
+            width: 110px;
+            height: 80px;
+        }
+
+        header #inf{
+            display: block;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10px;
+            font-size: 13px;
+        }
+        header a{
+            text-decoration: none;
+        }
+        header #phoneIcon{
+            margin-right: 0;
+        }
+        header #inf .infLi{
+            border-right: none;
+        }
+        header #headerContainer{
+            background: #41B974;
+        }
+        header #bar{
+            font-size: 30px;
+            width: 50px;
+            color: #41B974;
+            background-color: white;
+            padding: 5px 10px ;
+            border: 1px solid #41B974  ;
+            display: block;
+        }
+
+        header #crossBar{
+            font-size: 30px;
+            color: #41B974;
+            background-color: white;
+            padding: 5px 10px ;
+            border: 1px solid #41B974;
+            float: right;
+            display: block;
+        }
+
+        header #crossBar:hover{
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        header #header{
+            display: block;
+            width: 100%;
+        }
+        
+        header #menu{
+            display: block;
+            justify-content: center;
+            text-align: center;
+            padding-top: 30px;
+            transition: 2s;   
+            display: none; 
+        }
+        header #menu a{
+            padding-bottom: 20px;
+            transition: 0.60s;   
+
+        }
+        header #menu a:hover{
+            background: rgba(0, 0, 0, 0.4);
+            padding-bottom: 20px;   
+        }
+        
+        header #menu2{
+            display: none;
+            padding-top: 25px;
+            justify-content: end;
+            align-items: center;
+        }
     /*=====================================Section2========================================*/
+    @keyframes bgAnimation{
+        0%{
+            background-image: url(images/slider-six-1-1\ \(1\).jpg);
+    
+        }
+        50%{
+            background-image: url(images/slider-six-1-2.jpg);
+
+        }
+        100%{
+            background-image: url(images/slider-six-1-1\ \(1\).jpg);
+        }
+    }
+
+    #Section2Background{
+        background-color: rgba(0,0,0,0.4);
+        min-height: 80vh;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #section2{
+        background-image: url(images/slider-six-1-1\ \(1\).jpg);
+        min-height: 80vh;
+        background-size:cover ;
+        background-repeat: no-repeat;
+        animation-name: bgAnimation  ;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        display: block;
+    }
+    .discoverBtn{
+        border: 1px solid black;
+        padding: 12px 35px;
+        background: #41B974;
+        color: white;
+        padding: 15px 50px;
+        border-radius: 2px;
+        margin-top: 10px;
+        border: none;
+        transition: 1s;
+        cursor: pointer;
+    }
+    .discoverBtn:hover{ 
+        background: white;
+        color: black;
+    }
+
+
+    #section2 h1{
+        font-size: 56px;
+        font-weight: 700px;
+        color: white;
+        font-family: sans-serif;
+    }
+
+    #section2 h5{
+        color: white;
+        font-family: sans-serif;
+        padding-top: 26%;
+    }
+    /*=====================================Section3=======================================*/
+    #section3{
+        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background: white;
+        color: #000;
+    }
+
+    #section3 .section3LeftDiv img{
+        width: 100%;
+    }
+
+    #section3 .section3RighrDiv p{
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 800;
+    padding-top: 60px;
+    } 
+
+    #section3 .section3RighrDiv h1{
+        font-family: sans-serif;
+        margin-top: 15px;
+        color: rgb(26, 53, 70);
+        font-size: 48px;
+        line-height: 48px;
+        font-weight: 500;
+    }
+
+    #section3 h5{
+        font-family: sans-serif;
+        color: rgb(26, 53, 70);
+        padding-top: 27px;
+        padding-bottom: 27px;
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 600;
+    }
+
+    #section3 .caption{
+        color: gray;
+        font-family: sans-serif;
+        padding-top: 20px;
+        margin-top: 10px;
+    }
+
+    #section3 li{
+    font-size: 18px;
+    line-height: 27px;
+    font-family:Varta, sans-serif;
+    padding: 8px;
+    }
+    #section3 li img{
+    margin-right: 10px;
+    }
+    /* ============================secton4================================== */
+
+    #section4 .section4underline{
+        height: 3px; 
+        background: #41B974; 
+        width:160px; 
+        margin-left: 35%;
+
+    }
+        /* ===========================================About section 2=================================================== */
+    #aboutSection2{
+        background: url(images/commonBanner.jpeg);
+        background-size: cover ;
+        background-repeat: no-repeat;
+        min-height: 60vh;
+        width: 100%;
+    }
+    #aboutSection2 h1{
+        text-align: center;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #aboutSection2 .maincontainer{
+        background: rgba(0,0,0,0.4);
+        min-height: 60vh;
+
+    }
+        
+/* ===========================================About section 3=================================================== */
+#aboutSection3{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutSection3 h1{
+    font-size: 42px;
+    line-height: 42px;
+    font-weight: 500;
+    font-family: Varta;
+}
+
+#aboutSection3 img{
+    width: 90%;
+    border-radius: 14px;
+}
+
+#aboutSection3 i{
+    color: white;
+    padding: 10px;
+    background: #b1b9b5;
+    border-radius: 30px;
+    margin: 5px;
+ }
+
+ #aboutSection3 i:hover{
+    color: #9EC3E1;
+    background: white;
+ }
+
+ #aboutSection3 h1{
+    text-align: start;
+    color: black;
+    font-size: 46px;
+    line-height: 64px;
+    font-weight: 400;
+    font-family: Varta;
+    padding-top: 20px;
+}
+#aboutSection3 p{
+    font-family: Varta;
+    color: #b1b9b5;
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+#aboutSection3 h2{
+    font-size: 34px;
+    color: #41B974;
+    font-weight: 400;
+    font-family: Varta;
+    margin-top: 40px;
+}
+
+#aboutSection3 .sertificate{
+    width: 300px;
+    margin-top: 60px;
+}
+
+/* ===========================================About section 4=================================================== */
+#section4{
+ background: #cdcdcd;
+ padding-top: 100px;
+ padding-bottom: 100px;
+}
+
+#section4 i{
+   font-size: 60px;
+   color: #000;
+}
+
+#section4 .skillDiv:hover i{
+    color: #41B974;
+ }
+ 
+#section4 .skillDiv{
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px;
+}
+#section4 .skilTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#section4 h2{
+    color: #000;
+}
+
+#section4 p{
+    color: gray;
+}
+ 
+#section4 .underlineDiv{
+    height: 4px;
+    width: 100%;
+    background: #41B974;
+    display: flex;
+    justify-content: end;
+    transition: 1s;
+}
+#section4 .skillDiv:hover .underlineDiv{
+    height: 4px;
+    width: 0%;
+}
+/* ===========================================About section 4=================================================== */
+#section4 .row{
+    background: #cdcdcd;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   
+   #section4 i{
+      font-size: 60px;
+      color: #000;
+   }
+   
+   #section4 .skillDiv:hover i{
+       color: #41B974;
+    }
+    
+   #section4 .skillDiv{
+       background: white;
+       padding: 30px;
+       border-radius: 10px;
+       margin: 20px;
+   }
+   #section4 .skilTitle{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+
+   #section4 h1{
+    padding-bottom: 10px;
+   }
+   #section4 h2{
+       color: #000;
+   }
+   
+   #section4 p{
+       color: gray;
+   }
+    
+   #section4 .underlineDiv{
+       height: 4px;
+       width: 100%;
+       background: #41B974;
+       display: flex;
+       justify-content: end;
+       transition: 1s;
+   }
+   #section4 .skillDiv:hover .underlineDiv{
+       height: 4px;
+       width: 0%;
+   }
+    /* ===========================================About section 5=================================================== */
+   #section5{
+    margin-top: 100p;
+   }
+
+    #section5 img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    }
+}
+
+
+
+
+/* Media Devices (landscape tablets, 768px and up)*=============TAB=========*/
+@media only screen and (min-width:768px){
+    /*=====================================Header========================================*/
+    header #topHeader{
+        background: white;
+        display: flex;
+        justify-content: center;
+    }
+
+    header #topHeader img{
+        width: 180px;
+    }
+
+    header #logo{
+        display: flex;
+        width: 50%;
+    }
+
+    header #infDiv{
+        width: 50%;
+    }
+
+    header #infDiv a{
+        text-decoration: none;
+        color: black;
+        text-decoration: double;
+    }
+
+    header #inf{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    header #inf .infLi{
+    border-right: 1px solid gray; padding-right:10px;
+    }
+    /*=====================================Section2========================================*/
+   @keyframes bgAnimation{
+         0%{
+             background-image: url(images/slider-six-1-1\ \(1\).jpg);
+            
+            }
+         50%{
+            background-image: url(images/slider-six-1-2.jpg);
+            }
+        100%{
+             background-image: url(images/slider-six-1-1\ \(1\).jpg);
+            }
+        }
+        
+            #Section2Background{
+                background-color: rgba(0,0,0,0.4);
+                min-height: 80vh;
+                justify-content: center;
+                text-align: center;
+            }
+        
+            #section2{
+                background-image: url(images/slider-six-1-1\ \(1\).jpg);
+                min-height: 80vh;
+                background-size:cover ;
+                background-repeat: no-repeat;
+                animation-name: bgAnimation  ;
+                animation-duration: 7s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                animation-timing-function: linear;
+                display: block;
+            }
+            .discoverBtn{
+                border: 1px solid black;
+                padding: 12px 35px;
+                background: #41B974;
+                color: white;
+                padding: 15px 50px;
+                border-radius: 2px;
+                margin-top: 10px;
+                border: none;
+                transition: 1s;
+                cursor: pointer;
+            }
+            .discoverBtn:hover{ 
+                background: white;
+                color: black;
+            }
+        
+        
+            #section2 h1{
+                font-size: 56px;
+                font-weight: 700px;
+                color: white;
+                font-family: sans-serif;
+            }
+        
+            #section2 h5{
+                color: white;
+                font-family: sans-serif;
+                padding-top: 26%;
+            }
+ /* ===========================================ABOUT=================================================== */
+/* ===========================================About section 2=================================================== */
+#aboutSection2{
+    background-image: url(images/commonBanner.jpeg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+}
+
+#aboutSection2 .maincontainer{
+    background: rgba(0,0,0,0.4);
+    min-height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutSection2 h1{
+    text-align: center;
+    color: white;
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: 500;
+}
+
+/* ===========================================About section 3=================================================== */
+#aboutSection3{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    justify-content: center;
+}
+
+#aboutSection3 h1{
+    font-size: 52px;
+    line-height: 52px;
+    font-weight: 500;
+    font-family: Varta;
+}
+#aboutSection3 img{
+    width: 100%;
+    border-radius: 14px;
+}
+
+#aboutSection3 i{
+    color: white;
+    padding: 10px;
+    background: #b1b9b5;
+    border-radius: 30px;
+    margin: 5px;
+ }
+
+ #aboutSection3 i:hover{
+    color: #9EC3E1;
+    background: white;
+ }
+
+ #aboutSection3 h1{
+    text-align: start;
+    color: black;
+    font-size: 60px;
+    line-height: 64px;
+    font-weight: 400;
+    font-family: Varta;
+}
+#aboutSection3 p{
+    font-family: Varta;
+    color: #b1b9b5;
+    margin-top: 60px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+#aboutSection3 h2{
+    font-size: 34px;
+    color: #41B974;
+    font-weight: 400;
+    font-family: Varta;
+    margin-top: 60px;
+}
+
+#aboutSection3 .sertificate{
+    width: 300px;
+    margin-top: 100px;
+}
+    /* ===========================================About section 4=================================================== */
+#section4 .row{
+    background: #cdcdcd;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   
+   #section4 i{
+      font-size: 60px;
+      color: #000;
+   }
+   
+   #section4 .skillDiv:hover i{
+       color: #41B974;
+    }
+    
+   #section4 .skillDiv{
+       background: white;
+       padding: 30px;
+       border-radius: 10px;
+       margin: 20px;
+   }
+   #section4 .skilTitle{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+
+   #section4 h1{
+    padding-bottom: 10px;
+   }
+   #section4 h2{
+       color: #000;
+   }
+   
+   #section4 p{
+       color: gray;
+   }
+    
+   #section4 .underlineDiv{
+       height: 4px;
+       width: 100%;
+       background: #41B974;
+       display: flex;
+       justify-content: end;
+       transition: 1s;
+   }
+   #section4 .skillDiv:hover .underlineDiv{
+       height: 4px;
+       width: 0%;
+   }
+    /* ===========================================About section 5=================================================== */
+   #section5{
+    margin-top: 100p;
+   }
+
+    #section5 img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    }
+}
+
+ /* Large Devices (laptop/desktops, 992px and up) ==========LAPTOP===========*/
+ @media only screen and(min-width:992px){
+    header #topHeader{
+        background: white;
+        display: flex;
+        justify-content: center;
+    }
+    header #topHeader img{
+        width: 180px;
+    }
+    header #logo{
+        display: flex;
+        width: 50%;
+    }
+    
+    header #infDiv{
+        width: 50%;
+    }
+    
+    header #infDiv a{
+       text-decoration: none;
+       color: black;
+       text-decoration: double;
+    }
+    
+    header #inf{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+    }
+    
+    header #inf .infLi{
+     border-right: 1px solid gray; 
+     padding-right:10px;
+    }
+    
+    header #phoneIcon, #mailIcon{
+        color: #41B974;
+        padding: 10px;
+    }
+    
+    header #phoneIcon{
+        margin-right: 1px solid gray;
+    }
+    
+    header #headerContainer{
+        background: #151615;
+    }
+    header #bar{
+        font-size: 30px;
+        color: #41B974;
+        background-color: white;
+        padding: 5px 10px ;
+        border: 1px solid #41B974;
+        display: none;
+    }
+    
+    header #crossBar{
+        font-size: 30px;
+        color: #41B974;
+        background-color: white;
+        padding: 5px 10px ;
+        border: 1px solid #41B974;
+        float: right;
+        display: none;
+    }
+    header #menu a{
+        padding-bottom: 0px;   
+    }
+    header #menu a:hover{
+        background: #151615;  
+    }
+    header .borderDiv{
+        width: 0px;
+        height: 2px;
+        transition: 0.50s;
+    }
+    header #menu li:hover .borderDiv{
+        width: 100%; 
+        height: 2px;  
+        background: #41B272;
+    }
+    
+    header #menu2{
+        display: none;
+        padding-top: 25px;
+        justify-content: end;
+        align-items: center;
+    }
+    header #header{
+        display: flex;
+        width: 100%;
+    }
+    
+    header #menu{
+        display: flex;
+        justify-content: start;
+        padding-top: 30px; 
+        margin-top: 0px;    
+    }
+    
+    header #menu2{
+        display: flex;
+        padding-top: 25px;
+        justify-content: end;
+        align-items: center;
+    }
+    
+    header #menu2 input {
+        background: #41B974;
+        border: 1px solid black;
+        color: white;
+        padding: 15px 50px;
+        transition: 1s border ;
+    }
+    
+    header #menu2 input:hover{
+        border: 1px solid #41B974;
+        background: #000;
+        color: #41B974;
+        padding: 20px 50px;
+    }
+    
+    .sticky{
+        display: block;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+/*=====================================Section2========================================*/
 @keyframes bgAnimation{
     0%{
         background-image: url(images/slider-six-1-1\ \(1\).jpg);
@@ -225,14 +1265,8 @@ header #menu2 input:hover{
     color: white;
     font-family: sans-serif;
     padding-top: 14%;
-}
-#section2 #section2Underline{
-    background:white; 
-    margin-top: -3px; 
-    height: 1px; 
-    width: 380px; 
-}
-/*=====================================Section3=======================================*/
+ }
+ /*=====================================Section3=======================================*/
 
  #section3{
     width: 100%;
@@ -243,7 +1277,7 @@ header #menu2 input:hover{
 }
 
 #section3 .section3LeftDiv img{
-    width: 500px;
+    width: 100%;
 }
 
 #section3 .section3RighrDiv p{
@@ -289,7 +1323,6 @@ header #menu2 input:hover{
 #section3 li img{
 margin-right: 10px;
 }
-
 /*=====================================Section4=======================================*/
 #section4{
     width: 100%;
@@ -307,13 +1340,7 @@ margin-right: 10px;
     line-height: 16px;
     font-family:Varta, sans-serif;
 }
- #section4 .section4underline{
-    height: 3px; 
-    background: #41B974; 
-    width:160px; 
-    margin-left: 44%;
 
-}
 #section4 h1{
     font-family:Varta, sans-serif;
     color: #1a3546;
@@ -429,9 +1456,7 @@ margin-right: 10px;
     line-height: 27px;
     font-weight: 400;
 }
-#section7 img{
-    width: 90%;
-}
+
 #section7 .div1, .div2, .div3{
     padding: 10px;
     background: white;
@@ -439,7 +1464,6 @@ margin-right: 10px;
 }
 #section7 .div1:hover, .div2:hover, .div3:hover{
     background: #41B974;
-    color: white;
 }
 
 #section7 .div1 p, .div2 p, .div3 p{
@@ -480,7 +1504,6 @@ margin-right: 10px;
     line-height: 64px;
     font-weight: 600;
     font-family:sans-serif;
-
  }
 
  #section9{
@@ -497,8 +1520,6 @@ margin-right: 10px;
 
  #footer img{
     width: 230px;
-    margin-top: -22px;
-    margin-left: -15px;
  }
 
  #footer h5{
@@ -549,9 +1570,7 @@ margin-right: 10px;
     text-decoration: none;
     color: white;
  }
-
-
-/* ===========================================ABOUT=================================================== */
+    /* ===========================================ABOUT=================================================== */
 /* ===========================================About section 2=================================================== */
 #aboutSection2{
     background-image: url(images/commonBanner.jpeg);
@@ -637,147 +1656,612 @@ margin-right: 10px;
     width: 300px;
     margin-top: 100px;
 }
-
-/* ===========================================About section 4=================================================== */
-#section4 .row{
- background: #cdcdcd;
- padding-top: 100px;
- padding-bottom: 100px;
-}
-
-#section4 i{
-   font-size: 60px;
-   color: #000;
-}
-
-#section4 .skillDiv:hover i{
-    color: #41B974;
- }
- 
-#section4 .skillDiv{
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    margin: 20px;
-}
-#section4 .skilTitle{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#section4 h2{
-    color: #000;
-}
-
-#section4 p{
-    color: gray;
-}
- 
-#section4 .underlineDiv{
-    height: 4px;
-    width: 100%;
-    background: #41B974;
-    display: flex;
-    justify-content: end;
-    transition: 1s;
-}
-#section4 .skillDiv:hover .underlineDiv{
-    height: 4px;
-    width: 0%;
-}
-
 /* ===========================================About section 5=================================================== */
-#section5{
+   #section5{
     margin-top: 100p;
+   }
 
-}
-
-#section5 img{
+    #section5 img{
     width: 60px;
     height: 60px;
     border-radius: 50px;
+    }
 }
 
 
-/* ===========================================SERVICE=================================================== */
-/* ===========================================Service section 2=================================================== */
-#serviceSection2{
-    background-image: url(images/commonBanner.jpeg);
-    background-size: cover ;
-    background-repeat: no-repeat;
-    min-height: 60vh;
-
+ /* extra Large devices (large laptop and desktops, 1200px and up)======DESKTOP======= */
+ @media only screen and (min-width:1200px){
+    header #topHeader{
+        background: white;
+        display: flex;
+        justify-content: center;
+    }
+    header #topHeader img{
+        width: 180px;
+    }
+    header #logo{
+        display: flex;
+        width: 50%;
+    }
     
-}
+    header #infDiv{
+        width: 50%;
+    }
+    
+    header #infDiv a{
+       text-decoration: none;
+       color: black;
+       text-decoration: double;
+    }
+    
+    header #inf{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+    }
+    
+    header #inf .infLi{
+     border-right: 1px solid gray; padding-right:10px;
+    }
+    
+    header #phoneIcon, #mailIcon{
+        color: #41B974;
+        padding: 10px;
+    }
+    
+    header #phoneIcon{
+        margin-right: 1px solid gray;
+    }
+    
+    header #headerContainer{
+        background: #151615;
+    }
+    header #bar{
+        font-size: 30px;
+        color: #41B974;
+        background-color: white;
+        padding: 5px 10px ;
+        border: 1px solid #41B974;
+        display: none;
+    }
+    
+    header #crossBar{
+        font-size: 30px;
+        color: #41B974;
+        background-color: white;
+        padding: 5px 10px ;
+        border: 1px solid #41B974;
+        float: right;
+        display: none;
+    }
+    header .borderDiv{
+        width: 0px;
+        height: 2px;
+        transition: 0.50s;
+    }
+    header #menu a{
+        padding-bottom: 0px;   
+    }
+    header #menu a:hover{
+        background: #151615;  
+    }
+    header #menu li:hover .borderDiv{
+        width: 100%; 
+        height: 2px;  
+        background: #41B272;
+    }
+    
+    header #menu2{
+        display: none;
+        padding-top: 25px;
+        justify-content: end;
+        align-items: center;
+    }
+    header #header{
+        display: flex;
+        width: 100%;
+    }
+    
+    header #menu{
+        display: flex;
+        justify-content: start;
+        padding-top: 30px; 
+        margin-top: 0px;    
+    }
+    
+    header #menu2{
+        display: flex;
+        padding-top: 25px;
+        justify-content: end;
+        align-items: center;
+    }
+    
+    header #menu2 input {
+        background: #41B974;
+        border: 1px solid black;
+        color: white;
+        padding: 15px 50px;
+        transition: 1s border ;
+    }
+    
+    header #menu2 input:hover{
+        border: 1px solid #41B974;
+        background: #000;
+        color: #41B974;
+        padding: 20px 50px;
+        }
+    
+    .sticky{
+        display: block;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+/*=====================================Section2========================================*/
+@keyframes bgAnimation{
+    0%{
+        background-image: url(images/slider-six-1-1\ \(1\).jpg);
+ 
+    }
+     50%{
+        background-image: url(images/slider-six-1-2.jpg);
 
-#serviceSection2 .maincontainer{
-    background: rgba(0,0,0,0.4);
-    min-height: 60vh;
+     }
+     100%{
+        background-image: url(images/slider-six-1-1\ \(1\).jpg);
+     }
+  }
+
+    #Section2Background{
+        background-color: rgba(0,0,0,0.4);
+        min-height: 100vh;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #section2{
+        background-image: url(images/slider-six-1-1\ \(1\).jpg);
+        min-height: 100vh;
+        background-size:cover ;
+        background-repeat: no-repeat;
+        animation-name: bgAnimation  ;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        display: block;
+    }
+    .discoverBtn{
+        border: 1px solid black;
+        padding: 12px 35px;
+        background: #41B974;
+        color: white;
+        padding: 15px 50px;
+        border-radius: 2px;
+        margin-top: 10px;
+        border: none;
+        transition: 1s;
+        cursor: pointer;
+    }
+    .discoverBtn:hover{ 
+        background: white;
+        color: black;
+    }
+
+
+    #section2 h1{
+        font-size: 86px;
+        font-weight: 700px;
+        color: white;
+        font-family: sans-serif;
+    }
+
+    #section2 h5{
+        color: white;
+        font-family: sans-serif;
+        padding-top: 14%;
+    }
+        /*=====================================Section3=======================================*/
+
+    #section3{
+        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background: white;
+        color: #000;
+    }
+
+    #section3 .section3LeftDiv img{
+        width: 100%;
+    }
+
+    #section3 .section3RighrDiv p{
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 800;
+    padding-top: 60px;
+    } 
+
+    #section3 .section3RighrDiv h1{
+        font-family: sans-serif;
+        margin-top: 15px;
+        color: rgb(26, 53, 70);
+        font-size: 48px;
+        line-height: 48px;
+        font-weight: 500;
+    }
+
+    #section3 h5{
+        font-family: sans-serif;
+        color: rgb(26, 53, 70);
+        padding-top: 27px;
+        padding-bottom: 27px;
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 600;
+    }
+
+    #section3 .caption{
+        color: gray;
+        font-family: sans-serif;
+        padding-top: 20px;
+        margin-top: 10px;
+    }
+
+    #section3 li{
+    font-size: 18px;
+    line-height: 27px;
+    font-family:Varta, sans-serif;
+    padding: 8px;
+    }
+    #section3 li img{
+    margin-right: 10px;
+    }
+
+    /*=====================================Section4=======================================*/
+    #section4{
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: #EDF1F3;
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        font-family:Varta, sans-serif;
+    }
+
+    #section4 p{
+        font-size: 16px;
+        line-height: 16px;
+        font-family:Varta, sans-serif;
+    }
+
+    #section4 h1{
+        font-family:Varta, sans-serif;
+        color: #1a3546;
+        font-size: 48px;
+        line-height: 48px;
+        font-weight: 600;
+        padding-top: 10px;
+    }
+
+    #section4 .imageDivContainer{
+        padding-top: 50px;
+        text-align: start;
+    }
+
+    #section4 .imageDiv1,.imageDiv2,.imageDiv3{
+        padding: 15px;
+        background: white;
+        border: 15px solid #EDF1F3;
+    }
+
+
+    #section4 .imageDiv1 h5,.imageDiv2 h5,.imageDiv3 h5{
+        font-size: 24px;
+    }
+
+    #section4 .imageDiv1 p, .imageDiv2 p, .imageDiv3 p{
+    color: gray;
+    }
+
+    #section4 img{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#serviceSection2 h1{
-    text-align: center;
+    }
+
+    #section4 .iconImageDiv{
+        display: block;
+        margin-top: -20px;
+        margin-left: 72%;
+    }
+
+    #section4 .iconImageDiv img{
+        width: 100px;
+    }
+
+    /*=====================================Section5=======================================*/
+    #section5 {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    #section5 h1{
+        color: #1a3546;
+        font-family:Varta, sans-serif;
+    }
+
+    #section5 form{
+        margin-top: 30px;
+    }
+
+    #email{
+        border: none;
+        width: 400px;
+        padding: 10px;
+    }
+    /*=====================================Section6=======================================*/
+
+    #section6{
+        text-align: center;
+        margin-top: 100px;
+        padding-bottom: 90px;
+        background: #1A3546;
+        font-family: sans-serif;
+
+    }
+
+    #section6 img{
+        width: 22%;
+        padding-top: 30px;
+    }
+
+    #section6 .section6Div{
+        background: #1A3546;
+        padding-top: 60px;
+        padding-bottom: 30px;
+        display: flex;
+    }
+
+    #section6 .section6Div div {
+    width: 25%;
     color: white;
-    font-size: 64px;
-    line-height: 64px;
-    font-weight: 500;
-}
+    border-right: 1px solid white;
+    }
 
-/* ===========================================Service section 2=================================================== */
-#serviceSection3{
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-/* ===========================================CONTACT=================================================== */
-/* ===========================================Contact section 2=================================================== */
-#ourWorkSection2{
-    background-image: url(images/commonBanner.jpeg);
-    background-size: cover ;
-    background-repeat: no-repeat;
-    min-height: 60vh;
-   
-}
+    /*=====================================Section7=======================================*/
+    #section7 {
+        background: #EDF1F3;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        font-family:sans-serif;
+    }
 
-#ourWorkSection2 .maincontainer{
-    background: rgba(0,0,0,0.4);
-    min-height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#ourWorkSection2 h1{
-    text-align: center;
-    color: white;
-    font-size: 64px;
-    line-height: 64px;
-    font-weight: 500;
-}
-/* ===========================================CONTACT=================================================== */
-/* ===========================================Contact section 2=================================================== */
-#contactSection2{
-    background-image: url(images/commonBanner.jpeg);
-    background-size: cover ;
-    background-repeat: no-repeat;
-    min-height: 60vh;
-   
-}
+    #section7 .container{
+        text-align: center;
+    }
 
-#contactSection2 .maincontainer{
-    background: rgba(0,0,0,0.4);
-    min-height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    #section7 .container p{
+        text-align: left;
+        font-family:sans-serif;
+        padding: 20px;
 
-#contactSection2 h1{
-    text-align: center;
-    color: white;
-    font-size: 64px;
-    line-height: 64px;
-    font-weight: 500;
+    }
+    #section7 .description{
+        color: #7a7a7a;
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 400;
+    }
+
+    #section7 .div1, .div2, .div3{
+        padding: 10px;
+        background: white;
+        border: 20px solid  #EDF1F3;
+    }
+    #section7 .div1:hover, .div2:hover, .div3:hover{
+        background: #41B974;
+    }
+
+    #section7 .div1 p, .div2 p, .div3 p{
+    float: left;
+    } 
+
+    #section7 .div1 i, .div2 i, .div3 i{
+        float: left;
+        font-size: 30px;
+        background:#41B974;
+        border-radius: 30px;
+        width: 50px;
+        height: 50px;
+        justify-content: center;
+        padding: 11px;
+        color: white;
+    } 
+
+    #section7 .div1 i:hover, .div2 i:hover, .div3 i:hover{
+        background: white;
+        color: #41B974;
+    }
+
+    /*=====================================Section8=======================================*/
+    #section8{
+        background-image: url(images/about-six-1-1.jpg);
+        background-size: cover;
+    }
+
+    #section8 .section8Div{
+        background-color: #41B272;
+        padding: 100px;
+        color: white;
+    }
+
+    #section8 .section8Div h1{
+        font-size: 64px;
+        line-height: 64px;
+        font-weight: 600;
+        font-family:sans-serif;
+
+    }
+
+    #section9{
+        display: block;
+    }
+
+    #footer{
+        display: block;
+        background: #1a3546;
+        padding-top:100px;
+        padding-bottom:100px;
+        color: #6ea8b9;
+    }
+
+    #footer img{
+        width: 230px;
+    }
+
+    #footer h5{
+        font-family:sans-serif;
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 400;
+        color: white;
+    }
+
+    #footer i{
+        color: #b1b9b5;
+        padding: 10px;
+        background: #172F3E;
+        border-radius: 30px;
+    }
+
+    #footer i:hover{
+        color: #172F3E;
+        background: white;
+    }
+    #footer a{
+        text-decoration: none;
+        color: #6ea8b9;
+    }
+
+    #footer li{
+        list-style: none;
+        margin-left: -30PX;
+    }
+
+    #sendemail{
+    width: 300px;
+    border: none;
+    padding: 10px;
+    }
+
+    .bottomFooter{
+        background: #172F3E;
+        color: #6ea8b9;
+        padding: 20px;
+        padding-top: 40px;
+        text-align: center;
+
+    }
+
+    .bottomFooter a{
+        text-decoration: none;
+        color: white;
+    }
+        /* ===========================================ABOUT=================================================== */
+    /* ===========================================About section 2=================================================== */
+    #aboutSection2{
+        background-image: url(images/commonBanner.jpeg);
+        background-size: cover ;
+        background-repeat: no-repeat;
+        min-height: 60vh;
+    }
+
+    #aboutSection2 .maincontainer{
+        background: rgba(0,0,0,0.4);
+        min-height: 60vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #aboutSection2 h1{
+        text-align: center;
+        color: white;
+        font-size: 64px;
+        line-height: 64px;
+        font-weight: 500;
+    }
+
+    /* ===========================================About section 3=================================================== */
+    #aboutSection3{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        justify-content: center;
+    }
+
+    #aboutSection3 h1{
+        font-size: 52px;
+        line-height: 52px;
+        font-weight: 500;
+        font-family: Varta;
+    }
+    #aboutSection3 img{
+        width: 100%;
+        border-radius: 14px;
+    }
+
+    #aboutSection3 i{
+        color: white;
+        padding: 10px;
+        background: #b1b9b5;
+        border-radius: 30px;
+        margin: 5px;
+    }
+
+    #aboutSection3 i:hover{
+        color: #9EC3E1;
+        background: white;
+    }
+
+    #aboutSection3 h1{
+        text-align: start;
+        color: black;
+        font-size: 60px;
+        line-height: 64px;
+        font-weight: 400;
+        font-family: Varta;
+    }
+    #aboutSection3 p{
+        font-family: Varta;
+        color: #b1b9b5;
+        margin-top: 60px;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 300;
+    }
+
+    #aboutSection3 h2{
+        font-size: 34px;
+        color: #41B974;
+        font-weight: 400;
+        font-family: Varta;
+        margin-top: 60px;
+    }
+
+    #aboutSection3 .sertificate{
+        width: 300px;
+        margin-top: 100px;
+    }
+           /* ===========================================About section 5=================================================== */
+   #section5{
+    margin-top: 100p;
+   }
+
+    #section5 img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    }
 }
